@@ -47,8 +47,8 @@ python -m app.main
 
 ### API Testing
 ```bash
-# Test main endpoint
-curl "https://playwright-api-448085091262.europe-west3.run.app/docs#/default/scrape_scrape_get"
+# Test main endpoint with required URL
+curl "http://localhost:8000/api/v1/div-tree?url=https://www.w3schools.com/howto/howto_js_treeview.asp"
 
 # Swagger UI
 open http://localhost:8000/docs
@@ -89,18 +89,18 @@ Extracts complete DOM tree structure.
 ### Build & Test
 ```bash
 # Build image
-docker build -t dom-tree-scraper .
+docker build -t europe-west3-docker.pkg.dev/koga-ai/playwright-repo/playwright-api .
 
 # Run container
-docker run -p 8000:8000 dom-tree-scraper
+docker run -p 8000:8000 europe-west3-docker.pkg.dev/koga-ai/playwright-repo/playwright-api
 
 # Test API
-curl "http://localhost:8000/api/v1/div-tree"
+curl "http://localhost:8000/api/v1/scrap"
 ```
 
 ### Docker Hub
 ```bash
-docker pull zunxii/urope-west3-docker.pkg.dev/koga-ai/playwright-repo/playwright-api
+docker pull zunxii/europe-west3-docker.pkg.dev/koga-ai/playwright-repo/playwright-api
 ```
 
 ## GCP Deployment
