@@ -1,0 +1,64 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.egg-info/
+*.log
+
+# Virtual environments
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# IDE / Editor settings
+.vscode/
+.idea/
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Playwright
+/ms-playwright/
+playwright-report/
+test-results/
+
+# Docker
+*.tar
+*.pid
+docker-compose.override.yml
+
+# FastAPI / Uvicorn
+*.db
+*.sqlite3
+
+# Node/npm (if you add JS tooling later)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build artifacts
+dist/
+build/
+*.egg
+*.whl
+
+# Coverage / testing
+.coverage
+coverage.xml
+htmlcov/
+.pytest_cache/
+.cache/
+
+# Secrets
+*.env.local
+secrets.json
+config.json
+
+gCloud-sdk/
